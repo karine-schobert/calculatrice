@@ -1,0 +1,340 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+
+body{
+    background: url("https://source.unsplash.com/random/1600x900");
+    min-width:365px ;
+    max-width:1900px ;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: auto;
+    height: auto;
+    margin:20px 20px ;
+}
+.calculatrice{
+   margin-top:280px ;
+    border: 3px dashed black ;
+    border-radius:15px ;
+    background: rgb(199, 191, 191);
+   
+}
+h1{
+position: relative;
+flex-direction: column ;
+justify-content: center;
+align-items: center;
+width: 350px;
+height: 50px;
+padding: 10px 0 0 4%;
+margin-left:40% ;
+margin-top: 15px;
+margin-bottom: 50px;
+border: 2px solid rgb(159, 222, 159);
+border-radius:5px ;
+background:greenyellow ;
+}
+.text {
+    position: relative;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width:300px ;
+height:80px ;
+border: 1px solid black;
+margin: 40px;
+margin-left:42% ;
+padding: 20px;
+font-size:18px ;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+img:hover{
+    background-color:yellow ;
+    height:25px ;
+    width: 25px;
+    border-radius: 25px;
+    cursor: grab;
+}
+.app{
+    display: grid;
+    width: 300px;
+    margin:0 auto 25px;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50px repeat(5,30px);
+    grid-template-areas:
+    "res res res res" 
+    "7 8 9 reset"
+    "4 5 6 reset"
+    "1 2 3 reset"
+    "0 dot plus minus"
+    "equal equal times div";
+    border: 2px solid rgb(4, 33, 119);
+    border-radius: 4px;
+}
+h3, .paragraphe{
+    text-align: right;
+    margin: 7px 10px 0 0;
+    font-size:2 rem ;
+    grid-area: res;
+}
+
+button{
+    background: rgb(71, 117, 166);
+    color:white ;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover{
+    background: rgb(140, 204, 204);
+}
+#equal{
+    grid-area: equal;
+}
+#clear{
+    grid-area: reset;
+}
+
+footer{
+    display:flex;
+    flex-direction: wrap;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    background: violet;
+}
+a{
+   font-size: 18px; 
+   color: black;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+footer i li{
+    background: black;
+    font-size: 25px;
+    border: 1px solid blanchedalmond;
+}
+img, .youtube {
+    width: 25px; 
+    height:25px;
+  margin-right: 5px;
+}
+
+a:hover{
+    cursor: grab;
+    color:brown;
+    font-weight: bold;
+}
+/*media queries**************************/
+@media screen and (max-width: 1280px) {
+    main {
+        margin: 0 10px;
+        padding: 15px;
+     } 
+h1{
+background: green;
+width: 315px;
+height: 60px;
+padding:10px  0 10px 45px;
+align-items: center;
+margin: 25px 25px 30px 37%;
+
+    
+    } 
+    .text {
+        width:200px ;
+        height:80px ;
+        border: 1px solid black;
+        align-items: center;
+        margin: 25px auto;
+        padding: 50px;
+    } 
+}
+@media screen and (max-width: 1024px) {
+    main {
+        margin: 0 10px;
+        padding: 15px;
+     } 
+h1{
+background: green;
+width: 315px;
+height: 60px;
+padding:10px  0 10px 45px;
+align-items: center;
+margin: 25px 25px 30px 33%;
+
+    
+    } 
+    .text {
+        width:200px ;
+        height:80px ;
+        border: 1px solid black;
+        align-items: center;
+        margin: 25px auto;
+        padding: 50px;
+    } 
+}
+
+
+
+@media screen and (max-width: 960px) {
+   
+h1{
+  background: red;  
+  width: 290px;
+    height: 60px;
+    padding:10px  0 10px 45px;
+    align-items: center;
+    margin: 25px 25px 30px 32%;
+    } 
+
+.text {
+    width:200px ;
+    height:80px ;
+    border: 1px solid black;
+    align-items: center;
+    margin: 25px auto;
+    padding: 50px;
+}   
+    
+}  
+    @media screen and (max-width: 820px) {
+        
+h1{
+    background: rgb(131, 131, 224);
+    width: 290px;
+    height: 60px;
+    padding:10px  0 10px 45px;
+    align-items: center;
+    margin: 25px 25px 30px 30%;
+    
+    } 
+.text {
+    width:200px ;
+    height:80px ;
+    border: 1px solid black;
+    align-items: center;
+    margin: 25px auto;
+    padding: 50px;
+} 
+} 
+
+@media screen and (max-width: 540px) {
+    h1{
+        background: rgb(131, 131, 224);
+        width: 290px;
+        height: 60px;
+        padding:10px  0 10px 45px;
+        align-items: center;
+        margin: 25px 25px 30px 19%;
+        
+        } 
+    .text {
+        width:200px ;
+        height:80px ;
+        border: 1px solid black;
+        align-items: center;
+        margin: 25px auto;
+        padding: 50px;
+    }
+
+}
+    @media screen and (max-width: 450px) {
+        
+h1{
+background:violet;
+width: 290px;
+height: 60px;
+padding:10px  0 10px 45px;
+align-items: center;
+margin: 25px 25px 30px 4%;
+    } 
+
+.text {
+    width:200px ;
+    height:80px ;
+    border: 1px solid black;
+    align-items: center;
+    margin: 25px auto;
+    padding: 50px;
+} 
+    
+    }
+
+    @media screen and (max-width: 412px) {
+        
+        h1{
+        background:violet;
+        width: 290px;
+        height: 60px;
+        padding:10px  0 10px 45px;
+        align-items: center;
+        margin: 25px 25px 30px 9%;
+            } 
+        
+        .text {
+            width:200px ;
+            height:80px ;
+            border: 1px solid black;
+            align-items: center;
+            margin: 25px auto;
+            padding: 50px;
+        } 
+            
+            }    
+            @media screen and (max-width: 360px) {
+        
+                h1{
+                background:violet;
+                width: 290px;
+                height: 60px;
+                padding:10px  0 10px 45px;
+                align-items: center;
+                margin: 25px 25px 30px 4%;
+                    } 
+                
+                .text {
+                    width:200px ;
+                    height:80px ;
+                    border: 1px solid black;
+                    align-items: center;
+                    margin: 25px auto;
+                    padding: 50px;
+                } 
+                    
+                    }
+
+@media screen and (max-width: 350px) {
+
+h1{
+background:pink;
+width: 290px;
+height: 60px;
+padding:10px  0 10px 45px;
+align-items: center;
+margin: 25px 25px 30px  4%;
+    } 
+.text {
+    width:200px ;
+    height:80px ;
+    border: 1px solid black;
+    align-items: center;
+    margin: 25px auto;
+    padding: 50px;
+}   
+
